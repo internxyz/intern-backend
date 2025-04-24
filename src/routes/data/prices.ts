@@ -112,7 +112,7 @@ const PricesByMultipleIdsSuccessResponseSchema = z.object({
   meta: z.object({
     total: z.number(),
     page: z.number(),
-    limit: z.number(),
+    perPage: z.number(),
   }).nullable(),
   data: z.array(z.object({
     id: z.string(),
@@ -154,7 +154,7 @@ app.openapi(getPricesByMultipleIds, (c) => {
     meta: {
       total: 3,
       page: 1,
-      limit: 10,
+      perPage: 10,
     },
     data: [
       {

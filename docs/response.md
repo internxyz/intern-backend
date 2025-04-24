@@ -1,6 +1,6 @@
 # Response
 
-```
+```json
 {
   "status": "ok",          // "ok" | "error"
   "code": 200,             // mirrors the HTTP status when relevant
